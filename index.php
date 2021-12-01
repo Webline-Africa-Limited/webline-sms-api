@@ -2,6 +2,7 @@
 $senderid = 'Webline';
 $phone = '255753716279';
 $message = 'Hogera Utajibiwa kupitia mawasilian';
+$api_username = 'your bearer token';
 
 $curl = curl_init();
 
@@ -15,7 +16,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer yourweblinetoken'
+    "Authorization: Bearer $api_username"
   ),
 ));
 
