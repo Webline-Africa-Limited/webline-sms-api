@@ -7,7 +7,7 @@ $api_username = 'your bearer token';
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://bulksms.webline.co.tz/api/v3/sms/send?recipient='. $phone .'&sender_id='. $senderid .'&message='.urlencode($message).'', 
+  CURLOPT_URL => 'https://sms.webline.co.tz/api/v3/sms/send?recipient='. $phone .'&sender_id='. $senderid .'&message='.urlencode($message).'', 
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
