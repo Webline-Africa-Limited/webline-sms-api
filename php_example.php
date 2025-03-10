@@ -1,6 +1,6 @@
 <?php
 $senderid = 'Webline';
-$phone = '255753716279';
+$phone = '+255734666100';
 $message = 'Hogera Utajibiwa kupitia mawasilian';
 $api_username = 'your bearer token';
 
